@@ -1,0 +1,17 @@
+touch index.html - create a html file
+
+notepad index.html - open and edit the file
+
+ls - list files in directory
+
+git add index.html or git add * - prepare one or all files for uploading
+
+git status - see what files are ready to be uploaded
+
+git commit -m "Details on your changes here"
+
+git push origin master
+:username
+:password
+
+!!!!!!!You have updated your website!!!!!!

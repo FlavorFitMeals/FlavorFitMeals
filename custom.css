@@ -1,0 +1,133 @@
+.s-cart{
+	width:300px;
+	/*height:300px;*/
+	/*background-color:white;*/
+	position:fixed;
+	right:0;
+	top:20%;
+	z-index:30;
+	/*overflow:hidden;*/
+	/*overflow-y:scroll;*/
+	transition:all 0.5s ease-in-out 0s;
+	/*border-left: 5px solid #cb8402;*/
+	/*border-bottom: 5px solid #cb8402;*/
+}
+.d-row {
+	width:100%;
+	padding:10px;
+}
+.s-cart-head {
+	text-align: center;
+	height:45px;
+	background-color:#cb8402;
+}
+.s-cart-title{
+	color:white;
+}
+.s-cart-icon {
+	position:absolute;
+	left:25px;
+	width:30px;
+	height:30px;
+	font-size:30px;
+	color:white;
+	z-index:50;
+	transition:color 0.2s ease-in-out 0s;
+}
+.s-cart-icon:hover {
+	cursor:pointer;
+	color:#9a5c0c;
+}
+.s-cart-hide {
+	position:absolute;
+	left:250px;
+	top:10px;
+	font-size:30px;
+	color:white;
+	z-index:50;
+	transition:color 0.2s ease-in-out 0s;
+}
+.s-cart-hide:hover {
+	cursor:pointer;
+	color:#9a5c0c;
+}
+.s-cart-body{
+	width:100%;
+	transition:all 0.2s ease-in-out 0s;
+	background-color:white;
+	max-height:255px;
+	overflow-y:scroll;
+	/*border-bottom:10px solid #cb8402;*/
+}
+.s-cart-body-spacefiller{
+	color:black;
+}
+.s-cart-body > p {
+	color:black !important;
+}
+.s-cart-footer{
+	background-color:white;
+	transition:all 0.2s ease-in-out 0s;
+}
+.s-cart-error {
+	color:red !important;
+}
+.invisible { 
+	display: none;
+}
+.btn-primary{
+	color:white !important;
+	z-index:50px;
+}
+.menu-item:hover {
+	cursor: pointer;
+}
+
+tab {
+	display:block;
+	height:auto;
+	margin-left:20px;
+}
+.item-title{
+	color:orange;
+}
+.item-title::after{
+	content:" (Click To Select & Edit)";
+}
+.selected{
+	color:chartreuse !important;
+	text-decoration: underline;
+}
+.selected::after{
+	content:" (Currently Selected)";
+}
+.xbtn {
+	width: 15px;
+  height: 15px;
+  background-image: url(images/xmark.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  margin-top: 6.5px;
+  margin-right: 10px;
+  float: left;
+}
+.xbtn:hover {
+	cursor:pointer;
+}
+span.receipt-text {
+    line-height: 19px;
+    display: block;
+}
+#download-receipt{
+	padding:15px;
+}
+.t-red{
+	color:red !important;
+}
+#wait{
+	display:none;
+}
+.displaying{
+	display:block !important;
+}
