@@ -68,6 +68,17 @@
 .s-cart-footer{
 	background-color:white;
 	transition:all 0.2s ease-in-out 0s;
+	position:relative;
+}
+#gallery{
+	margin:0 auto;
+	text-align:center;
+}
+p#total {
+  float: right;
+  position: absolute;
+  right: 16px;
+  top: 16px;
 }
 .s-cart-error {
 	color:red !important;
@@ -130,4 +141,18 @@ span.receipt-text {
 }
 .displaying{
 	display:block !important;
+}
+.menu-item img {
+  width: 80px !important;
+  border-radius: 0% !important; 
+  background-color: #000000cc !important;
+}
+#section-offer {
+    padding: 8em 0 !important;
+}
+.media-body:hover {
+	color:#FDA403;
+}
+.media-body{
+	transition: all 0.5s ease-in-out 0s;
 }
