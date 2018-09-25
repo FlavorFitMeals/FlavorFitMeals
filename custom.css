@@ -366,3 +366,9 @@ span.receipt-text {
 .noti-text{
 	line-height: 30px;
 }
+#reservationModal {
+	background-color: rgba(0, 0, 0, 0.8);
+}
+.site-cover{
+	background-attachment: fixed;
+}
