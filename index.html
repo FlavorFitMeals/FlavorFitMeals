@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>Flavor Fit Meals</title>
+    <title>FlavorFit Meals</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     
@@ -22,6 +22,50 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
   </head>
   <body data-spy="scroll" data-target="#site-navbar" data-offset="200">
+    <div class="noti">
+      <p class="noti-text">Added To Cart!</p>
+    </div>
+    <div id="tutorial">
+      <!-- 20.3125 -->
+      <div class="tut-header">
+        <h1 class="tut-title">How to Order:</h1>
+        <p class="tut-step">#1 Choose your carb</p>
+      </div>
+      <div class="slide-container">
+        <div class="tut-silde" id="slide1">
+          <div class="tut-image slide1img"></div>
+          <p class="tut-tip">Click the "Choose Carb" button below one of the 3 carbs to add it to the shopping cart. Check your items by opening the cart tab on the right.</p>
+          <p class="tut-tip">(Press "Next" or click the circles)</p>
+        </div>
+        <div class="tut-silde" id="slide2">
+          <div class="tut-image slide2img"></div>
+          <p class="tut-tip">Select a dish to go with your carb by clicking the button below the dish. Your meal is finished!</p>
+          <p class="tut-tip" style="">Tools:</p>
+          <ul style="text-align:left; margin-top:10px">
+            <li>Press "New Item" to add more items</li>
+            <li>Click an item to select it and change the carb/dish (repeat 1 & 2)</li>
+            <li>Get more of the same item by changing the quantity</li>
+            <li>Press the "X" to remove a item</li>
+          </ul>
+        </div>
+        <div class="tut-silde" id="slide3">
+          <div class="tut-image slide3img"></div>
+          <p class="tut-tip">You've finished! To submit and pay for your order, fill out the contact form located at the "Finish Your Order" section of the page and press submit. Dont forget to download your receipt or make any additional notes.</p>
+          <p class="tut-tip">After you submit, you must make a payment of "Total: x" dollars by Paypal, Cash, or Venmo through one of the provided links.</p>
+          <p class="tut-tip">This is the end of the tutorial! Happy shopping!</p>
+        </div>
+      </div>
+      <div class="slide-controls">
+        <p class="next-p"><a href="#" class="btn-outline-white btn-lg next" nextslide="slide2">Next</a></p>
+        <p class="next-p"><a href="#" class="btn-outline-white btn-lg next tut-skip">Close</a></p>
+      </div>
+      
+      <div class="checkboxes">
+        <div class="checkbox checked" checkslide="slide1"></div>
+        <div class="checkbox" checkslide="slide2"></div>
+        <div class="checkbox" checkslide="slide3"></div>
+      </div>
+    </div>
     <div class="s-cart">
       <div class="d-row s-cart-head">
         <i class="fas fa-shopping-cart s-cart-icon"></i>
@@ -47,7 +91,7 @@
     </div>
     <nav class="navbar navbar-expand-lg navbar-dark site_navbar bg-dark site-navbar-light" id="site-navbar">
       <div class="container">
-        <a class="navbar-brand" href="#">Flavor Fit Meals</a>
+        <a class="navbar-brand" href="#">FlavorFit Meals</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#site-nav" aria-controls="site-nav" aria-expanded="false" aria-label="Toggle navigation">
         <span class="oi oi-menu"></span> Menu
         </button>
@@ -68,11 +112,12 @@
       <div class="container">
         <div class="row align-items-center justify-content-center text-center site-vh-100">
           <div class="col-md-12">
-            <h1 class="site-heading mb-3">Flavor Fit Meals</h1>
+            <h1 class="site-heading mb-3">FlavorFit Meals</h1>
             <h2 class="h5 site-subheading mb-5">Come and eat well with our delicious &amp; healthy foods.</h2>
             <!-- Mark mark Book mark bookmark pop up popup -->
             <!-- <p><a href="https://colorlib.com/" target="_blank" class="btn btn-outline-white btn-lg" data-toggle="modal" data-target="#reservationModal">Reservation</a></p> -->
             <p><a href="#" id="startOrdering" class="btn btn-outline-white btn-lg">Start Ordering</a></p>
+            <p class="tut-trigger">Tutorial</p>
           </div>
         </div>
       </div>
@@ -83,7 +128,6 @@
       <div class="container">
         <div class="row">
           <div class="col-md-5 mb-5">
-            <h4 class="site-sub-title">Our Story</h4>
             <h2 class="site-primary-title display-4">Welcome</h2>
             <p>My name is David Wright. I was born and raised in Tampa, Florida and attended USF where I studied Health Science. My background in the health and wellness field include working as a medical assistant for an Internal Physician for 4 years, an Associate for GNC (General Nutrition Center), and then being a crossfit athlete for 3+ years.
             </p>
@@ -131,7 +175,7 @@
                     <h5 class="text-primary"></h5>
                     <h5 class="mt-0 h4 carb">Jasmine Rice</h5>
                     <p class="mb-4">(32g carbs, 4g protein, 160 cal)</p>
-                    <p class="mb-0"><a class="btn btn-primary btn-sm carb-btn" carb="Jasmine Rice">Order Now!</a></p>
+                    <p class="mb-0"><a class="btn btn-primary btn-sm carb-btn" carb="Jasmine Rice">Choose Carb</a></p>
                   </div>
                 </div>
               </div>
@@ -142,7 +186,7 @@
                     <h5 class="text-primary"></h5>
                     <h5 class="mt-0 h4 carb">Roasted Red Potatoes</h5>
                     <p class="mb-4">(20g carbs, 2g protein, 100 cal)</p>
-                    <p class="mb-0"><a class="btn btn-primary btn-sm carb-btn" carb="Roasted Red Potatoes">Order Now!</a></p>
+                    <p class="mb-0"><a class="btn btn-primary btn-sm carb-btn" carb="Roasted Red Potatoes">Choose Carb</a></p>
                   </div>
                 </div>
               </div>
@@ -154,7 +198,7 @@
                     <h5 class="text-primary"></h5>
                     <h5 class="mt-0 h4 carb">Roasted Sweet Potatoes</h5>
                     <p class="mb-4">15g carbs, 1g protein, 90 cal</p>
-                    <p class="mb-0"><a class="btn btn-primary btn-sm carb-btn" carb="Roasted Sweet Potatoes">Order Now!</a></p>
+                    <p class="mb-0"><a class="btn btn-primary btn-sm carb-btn" carb="Roasted Sweet Potatoes">Choose Carb</a></p>
                   </div>
                 </div>
               </div>
@@ -197,6 +241,7 @@
                         <h5 class="mt-0">Honey Chipotle Chicken</h5>
                         <p>With black beans and green peppers topped with massarella cheese (14g carbs, 39g protein, 6g fat, 220 cal)</p>
                         <h6 class="text-primary menu-price"></h6>
+                        <p class="mb-0"><a class="btn btn-primary btn-sm dish-btn">Choose Dish</a></p>
                       </div>
                     </div>
                     <div class="media menu-item">
@@ -205,6 +250,7 @@
                         <h5 class="mt-0">Dyon Balsamic Chicken</h5>
                         <p>Served with green bean (2g carbs, 32g protein, 4g fat, 130 cal)</p>
                         <h6 class="text-primary menu-price"></h6>
+                        <p class="mb-0"><a class="btn btn-primary btn-sm dish-btn">Choose Dish</a></p>
                       </div>
                     </div>
                     <div class="media menu-item">
@@ -213,6 +259,7 @@
                         <h5 class="mt-0">Lemon & Italian Herb Chicken</h5>
                         <p>Served with broccoli (4g carbs, 32g protein, 4g fat, 140 cal)</p>
                         <h6 class="text-primary menu-price"></h6>
+                        <p class="mb-0"><a class="btn btn-primary btn-sm dish-btn">Choose Dish</a></p>
                       </div>
                     </div>
                   </div>
@@ -223,6 +270,7 @@
                         <h5 class="mt-0">Chicken Teriyaki</h5>
                         <p>With sauteed, cabbage, carrots, scallions, and spicy mayo (9g carbs, 32g protein, 9g fat, 205 cal)</p>
                         <h6 class="text-primary menu-price"></h6>
+                        <p class="mb-0"><a class="btn btn-primary btn-sm dish-btn">Choose Dish</a></p>
                       </div>
                     </div>
                     <div class="media menu-item">
@@ -231,6 +279,7 @@
                         <h5 class="mt-0">Chicken Souvlaki</h5>
                         <p>With tomatoes, cucumbers, feta cheese, and tgatgiku sauce (4g carbs, 38g protein, 10g fat, 250 cal)</p>
                         <h6 class="text-primary menu-price"></h6>
+                        <p class="mb-0"><a class="btn btn-primary btn-sm dish-btn">Choose Dish</a></p>
                       </div>
                     </div>
                     <div class="media menu-item">
@@ -239,6 +288,7 @@
                         <h5 class="mt-0">Chicken Fajita Bowl</h5>
                         <p>With onions, yellow bell peppers topped with Monterey jack cheese and salsa (9g carbs, 35g protein, 6g fat, 210 cal)</p>
                         <h6 class="text-primary menu-price"></h6>
+                        <p class="mb-0"><a class="btn btn-primary btn-sm dish-btn">Choose Dish</a></p>
                       </div>
                     </div>
                   </div>
@@ -253,6 +303,7 @@
                         <h5 class="mt-0">Garlic and Herb chicken</h5>
                         <p>With red peppers and mushrooms topped with spicy mayo (6g carbs, 32g protein, 9g fat, 185 cal)</p>
                         <h6 class="text-primary menu-price"></h6>
+                        <p class="mb-0"><a class="btn btn-primary btn-sm dish-btn">Choose Dish</a></p>
                       </div>
                     </div>
                   </div>
@@ -263,6 +314,7 @@
                         <h5 class="mt-0">Thai meatballs</h5>
                         <p>With bell peppers topped with cilantro and honey siracha sauce (4g carbs, 22g protein, 8g fat, 190 cal)</p>
                         <h6 class="text-primary menu-price"></h6>
+                        <p class="mb-0"><a class="btn btn-primary btn-sm dish-btn">Choose Dish</a></p>
                       </div>
                     </div>
                     
@@ -286,13 +338,13 @@
             </div>
           </div>
           <div class="col-md-7 mb-5">
-            <p style="color:#FDA403">
-              To complete your order, please make payments by:</br>
+            <b><p style="color:black">
+              To complete your order, please make a payment of <span class="total" style="color:blue">Total: $0</span> by:</br>
               1) Cash</br>
               2) Venmo - <link><a style="color:blue" target="_blank" href="https://venmo.com/dwright93420">https://venmo.com/dwright93420</a></link></br>
               3) PayPal - <link><a style="color:blue" target="_blank" href="https://www.paypal.me/dwright93420">https://www.paypal.me/dwright93420</a></link></br>
-            </p>
-            <p class="total" style="color:blue">Total: $0</p>
+            </p></b>
+            
             <form action="" id="orderForm" method="post">
               <div>
                 <p>Your Contact Information</p>
@@ -316,6 +368,10 @@
               <div class="form-group">
                 <label for="email" class="sr-only">Phone Number</label>
                 <input type="text" maxlength="30" required class="form-control" id="phonenumber" placeholder="Phone Number">
+              </div>
+              <div class="form-group">
+                <label for="email" class="sr-only">Notes</label>
+                <input type="text" maxlength="300" class="form-control" id="notes" placeholder="Any additional notes?">
               </div>
               <div class="form-group">
                 <label for="message" class="sr-only">Message</label>
@@ -367,8 +423,8 @@
             <div class="site-footer-widget mb-4">
               <ul class="site-footer-social list-unstyled ">
                 <!-- <li class="><a href="#"><span class="icon-twitter"></span></a></li> -->
-                <li class="><a href="https://www.facebook.com/david.wright.96558"><span class="icon-facebook"></span></a></li>
-                <li class="><a href="https://www.instagram.com/dwright_93/"><span class="icon-instagram"></span></a></li>
+                <li class=""><a href="https://www.facebook.com/david.wright.96558"><span class="icon-facebook"></span></a></li>
+                <li class=""><a href="https://www.instagram.com/dwright_93/"><span class="icon-instagram"></span></a></li>
               </ul>
             </div>
           </div>
@@ -395,7 +451,7 @@
                 <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                 <small>CLOSE </small><span aria-hidden="true">&times;</span>
                 </button>
-                <h1 class="mb-4">Thank you for ordering at Flavor Fit Meals</h1>
+                <h1 class="mb-4">Thank you for ordering at FlavorFit Meals</h1>
                 <form id="rbf">
                   <div class="row">
                     <p>Keep track of your orders by downloading your receipt</p>
